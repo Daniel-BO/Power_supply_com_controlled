@@ -42,26 +42,32 @@ to measure the current during a test:
 Query current protection
 
 :CURR:PROT?
+
 3A 43 55 52 52 3A 50 52 4F 54 3F 0A 0A 0A 0A
 
 to set a current protection to 6A
 
 :CURR:PROT 6
+
 3a 43 55 52 52 3a 50 52 4f 54 3f 0a 0a 0a 0a
 
 to measure the power during a test
 
 :VOLT:PROT:STAT?
+
 3A 56 4F 4C 54 3A 50 52 4F 54 3A 53 54 41 54 3F 0A 0A 0A 0A
 
 to set a voltage without activate the output:
+
 :VOLT 3
+
 3A 56 4F 4C 54 20 33 0A 0A 0A 0A
 
 
 to measure voltage that is settled:
 
 :VOLT?
+
 3A 56 4F 4C 54 3F 0A 0A 0A 0A
 
 
@@ -79,6 +85,7 @@ to measure the voltage during the test:
 to off the output:
 
 :OUTP OFF
+
 3A 4F 55 54 50 20 4F 46 46 0A 0A
 
 to on the output:
@@ -88,6 +95,7 @@ to on the output:
 3A 4F 55 54 50 20 4F 4E 0A 0A 0A 0A
 
 :OUTP?
+
 3A 4F 55 54 50 3F 0A 0A 0A
 
 1 is on 0 is off 

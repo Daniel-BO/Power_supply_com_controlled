@@ -84,6 +84,7 @@ to off the output:
 to on the output:
 
 :OUTP ON
+
 3A 4F 55 54 50 20 4F 4E 0A 0A 0A 0A
 
 :OUTP?
@@ -94,6 +95,7 @@ to on the output:
 the operativility of the power supply:
 
 :STAT:OPER:ENAB?
+
 3A 53 54 41 54 3A 4F 50 45 52 3A 45 4E 41 42 3F 0A 0A 0A 0A
 
 +0   means ok

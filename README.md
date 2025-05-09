@@ -1,5 +1,8 @@
 # Power_supply_com_controlled
 
+The main purpose of this repository is to use by scripts the power supply for test duties
+
+
 RS485 FT232 USB dongle to power supply RS485 port
 
 HCP1020A Power supply 100w/40V/10A

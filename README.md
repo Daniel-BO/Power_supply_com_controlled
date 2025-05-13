@@ -7,7 +7,12 @@ RS485 FT232 USB dongle to power supply RS485 port
 
 HCP1020A Power supply 100w/40V/10A
 
+Commands are send via serial port always with 9600 bauds
+
 SCPI Commands:
+
+----------------------------------------------------
+Commands not change : 
 
 to send a *IDN? is in hex command 2A 49 44 4E 3F 0A
 
@@ -17,21 +22,7 @@ example:
 
 <- HENGHUI Ltd.,HCP1020A,17,V003,860000
 
-Set a voltage an a current
-The APPLy command is used to control or query the power supply voltage and current values.
 
-:APPL 5,1
-
-example:
-
-3A 41 50 50 4C 20 35 2C 31 0A 0A
-
-:APPL 3,1
-
-example:
-
-
-3A 41 50 50 4C 20 33 2C 31 0A 0A
 
 to measure the current during a test:
 
@@ -45,23 +36,12 @@ Query current protection
 
 3A 43 55 52 52 3A 50 52 4F 54 3F 0A 0A 0A 0A
 
-to set a current protection to 6A
-
-:CURR:PROT 6
-
-3a 43 55 52 52 3a 50 52 4f 54 3f 0a 0a 0a 0a
 
 to measure the power during a test
 
 :VOLT:PROT:STAT?
 
 3A 56 4F 4C 54 3A 50 52 4F 54 3A 53 54 41 54 3F 0A 0A 0A 0A
-
-to set a voltage without activate the output:
-
-:VOLT 3
-
-3A 56 4F 4C 54 20 33 0A 0A 0A 0A
 
 
 to measure voltage that is settled:
@@ -108,6 +88,40 @@ the operativility of the power supply:
 
 +0   means ok
 by the way if you execute the command lock the front panel to not move the dial
+
+
+------------------------------------------------------------------------------------------
+Set commands change according the input 
+
+to set a current protection to 6A
+
+Set a voltage an a current
+The APPLy command is used to control or query the power supply voltage and current values.
+
+:APPL 5,1
+
+example:
+
+3A 41 50 50 4C 20 35 2C 31 0A 0A
+
+:APPL 3,1
+
+example:
+
+
+3A 41 50 50 4C 20 33 2C 31 0A 0A
+
+:CURR:PROT 6
+
+3a 43 55 52 52 3a 50 52 4f 54 3f 0a 0a 0a 0a
+
+to set a voltage without activate the output:
+
+:VOLT 3
+
+3A 56 4F 4C 54 20 33 0A 0A 0A 0A
+
+
 
 
 
